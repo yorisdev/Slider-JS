@@ -1,0 +1,75 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* **************************************BODY/HEADER */
+body {
+    background: #f1f1f1;
+}
+a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+header{
+  background-color: black;
+}
+header nav{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+header a{
+padding: 1rem;
+}
+
+header a:hover{
+  background:white;
+  color: black;
+  border-radius: 5px;
+
+}
+/* ****************************************SLIDER */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+  
+.slider img {
+  max-width: 100%;
+  display: none;
+}
+  img.active {
+  display: block;
+  animation: fade 0.8s;
+}
+
+.cont_btn {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  }
+
+.btn_nav {
+  font-size: 50px;
+  margin: 0 15px;
+  cursor: pointer;
+  }
+
+
+
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
